@@ -1,6 +1,7 @@
-const SERVICE_WORKER_URL = 'service-worker-substitute.js';
+const SERVICE_WORKER_URL = 'service-worker.js';
 
 function listen(reg, label) {
+    return;
     console.log('[%s]:', label, { reg });
 
     reg.addEventListener('statechange', () => {
