@@ -10,7 +10,7 @@ map.set('/images/heart.png', '/images/warning.png');
 self.addEventListener('install', async (evt) => {
     const cache = await caches.open(CACHED_NAME);
     await cache.add(PRECACHED_FILES);
-    return self.skipWaiting();
+    return await self.skipWaiting();
 });
 
 self.addEventListener('fetch', (evt) => {
