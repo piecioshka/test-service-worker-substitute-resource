@@ -1,6 +1,6 @@
 const CACHED_NAME = 'test-service-worker-substitute-resource';
 const PRECACHED_FILES = [
-    '/images/warning.png'
+    './images/warning.png'
 ];
 
 const map = new Map();
@@ -25,9 +25,8 @@ async function handleFetch(evt) {
     if (status && isOffline) {
         const cache = await caches.open(CACHED_NAME);
         const resource = await cache.match(map.get(url.pathname));
-        console.log({ resource });
-        return resource;
+        return resource.clone();
     } else {
-        return fetch(request.clone());
+        return fetch(request);
     }
 }
