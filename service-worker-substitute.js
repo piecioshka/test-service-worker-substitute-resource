@@ -1,5 +1,6 @@
 const CACHED_NAME = 'test-service-worker-substitute-resource';
 const PRECACHED_FILES = [
+    './',
     './images/warning.png'
 ];
 
