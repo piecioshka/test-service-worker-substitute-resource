@@ -1,7 +1,5 @@
 # test-service-worker-substitute-resource
 
-[![dependencies](https://david-dm.org/piecioshka/test-service-worker-substitute-resource.svg)](https://github.com/piecioshka/test-service-worker-substitute-resource)
-
 :ledger: Testing `Service Worker` to substitute resource
 
 ## Demo 🎉
