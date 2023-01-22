@@ -2,7 +2,7 @@
 
 :ledger: Testing `Service Worker` to substitute resource
 
-## Demo 🎉
+## Preview 🎉
 
 <https://piecioshka.github.io/test-service-worker-substitute-resource>
 
